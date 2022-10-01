@@ -28,7 +28,6 @@ interface Props {
 }
 
 export default function PostPreview({ post }: Props) {
-  console.log(post);
   const { user } = useUser();
   const router = useRouter();
   const [postImage, setPostImage] = useState<string | undefined>(undefined);
